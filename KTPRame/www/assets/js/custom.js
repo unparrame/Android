@@ -1,6 +1,10 @@
-var server = "http://192.168.1.100:8080/ktprame/WebServer/www";
+var server = "http://ktprame.azurewebsites.net"; //"http://192.168.1.100:8080/ktprame/WebServer/www";
 
-/* CAMERA */
+$(document).ready(function(){
+    $("#posterEmail").val($.cookie('email'));
+});
+
+/* START CAMERA */
 function showCamera(){
     navigator.camera.getPicture(onSuccess, onFail, {
         quality: 50,
@@ -33,3 +37,12 @@ function sendPhotoToServer(){
         alert(jsonMsg.message);
     })
 }
+
+/* END CAMERA */
+
+/* START LOGIN */
+function login(){
+    $.cookie('email', $("#email").val());
+    window.location = "main.html";
+}
+/* END LOGIN */

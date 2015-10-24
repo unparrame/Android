@@ -18,7 +18,7 @@
                     <h1>Welcome, {Name}!!</h1>
                     <a href="javascript:showCamera();" class="btn btn-success btn-block"><span class="fa fa-camera"></span> Ambil Foto</a><br>
                     <img src="" id="image" width="100%">
-                    <input type="email" value="" name="posterEmail" placeholder="Email" class="form-control" id="posterEmail">
+                    <input type="hidden" value="" name="posterEmail" placeholder="Email" class="form-control" id="posterEmail">
                     <textarea name="image" id="image-text" style="display: none; border:0px;"></textarea><br>
                     <button type="button" class="btn btn-info btn-block" onclick="javascript:sendPhotoToServer();"><span class="fa fa-upload"></span> Upload Foto</button>
                 </div>
@@ -26,6 +26,7 @@
         </div>
 
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-cookie/jquery.cookie.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <script type="text/javascript" src="cordova.js"></script>
