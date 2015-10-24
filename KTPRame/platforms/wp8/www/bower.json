@@ -1,0 +1,24 @@
+{
+  "name": "Pasar Laut",
+  "version": "0.0.1",
+  "authors": [
+    "Wilianto Indrawan <indrawan.wilianto@gmail.com>"
+  ],
+  "description": "Proyek untuk pasar laut",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.1.1",
+    "fontawesome": "~4.1.0",
+    "jquery-cookie": "1.4.0"
+  }
+}
