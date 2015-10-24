@@ -1,40 +1,49 @@
-body{
-    font-family: 'Open Sans', 'Sans';
-    letter-spacing: 0px;
-    -webkit-font-smoothing: antialiased !important;
+.login {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
 }
 
-h1{
-    font-size: 20px;
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
-/* START LOGIN */
-.login-wrapper{
-    background: url('../img/village-life-indonesia-herman-damar-11.jpg') fixed;
-    width:100%;
-    height:100%;
-    position:absolute;
-    display:table;
-}
-
-.login-inner{
+#loading{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    color: #f1f1f1;
     text-align: center;
-    padding: 0px 20px 0px 20px;
-    display:table-cell;
-    vertical-align:middle;
-    width:100%;
-    height:100%:
 }
-
-.login-inner h1, .login-inner a{
-    color: #FFFFFF;
-}
-
-.login-inner button{
-    font-size: 20px;
-}
-
-.lupa-password{
-    text-align: center;
-}
-/* END LOGIN */
