@@ -11,8 +11,9 @@ $(document).ready(function(){
 /* START CAMERA */
 function showCamera(){
     navigator.camera.getPicture(onSuccess, onFail, {
-        quality: 50,
-        destinationType: Camera.DestinationType.DATA_URL
+        quality: 10,
+        destinationType: Camera.DestinationType.DATA_URL,
+        correctOrientation: true
     });
 }
 
